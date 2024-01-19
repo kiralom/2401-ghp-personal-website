@@ -7,17 +7,15 @@ nav {
 border: 2pt solid black;
 }
 
-
 h1 {
     color:antiquewhite;
-    
     background-color: firebrick;
     margin: 0px;
     padding: 10px;
     }
     
 p {
-
+padding-left: 10px;
     }
     
 .navbar {
@@ -31,4 +29,15 @@ border: 2pt solid rgb(137, 48, 48);
 background-color:crimson;
 margin: 5pt;
 padding: 5pt;
+}
+
+.container {
+display: flex;
+}
+
+#headshot {
+    float:right;
+    border: 2pt solid black;
+    margin: 15px;
+
 }
