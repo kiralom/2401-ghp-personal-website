@@ -1,10 +1,11 @@
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: antiquewhite;
+    display: grid;
 }
 
 nav {
-border: 2pt solid black;
+border: 2pt ridge black;
 }
 
 h1 {
@@ -14,30 +15,75 @@ h1 {
     padding: 10px;
     }
     
+h4 {
+   margin=0pt; 
+}
+
 p {
 padding-left: 10px;
     }
     
+img {
+padding: 5px;
+}
+
 .navbar {
 display: flex;
 justify-content: flex-end;
-background-color:lightcoral;
+background-color:rgb(164, 162, 162);
 }
 
 .buttonBox {
-border: 2pt solid rgb(137, 48, 48);
-background-color:crimson;
+border: 3pt ridge rgb(137, 48, 48);
+background-color:rgb(209, 64, 93);
 margin: 5pt;
 padding: 5pt;
 }
 
 .container {
 display: flex;
+flex-wrap: nowrap;
+margin-left: 15px;
+justify-content: space-between;
+}
+
+.content {
+display: grid;
+flex-wrap: wrap;
+margin-top: 10px;
+}
+
+.subsec {
+display: flex;
+flex-flow: row;
+margin: 5pt;
+padding: 10pt;
+border: 2.5pt solid black
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    border: 4pt ridge black;
+    margin: 10px;
+    padding: 10px;
+}
+
+#nycBanner {
+    padding-left: 25px;
+    
 }
 
 #headshot {
     float:right;
     border: 2pt solid black;
     margin: 15px;
+    position:relative;
+}
 
+#collage {
+float:right;
+margin-top: 25px;
+margin-left: 30px;
+border: 1px solid black
 }
