@@ -1,2 +1,1 @@
-let d = Date();
-document.footer.innerHTML = "<h3>Today's date is " + d + "</h3>"
+alert("Last Updated Jan 21 2024")
