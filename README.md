@@ -8,4 +8,4 @@ There are several pages:
 
 There is a CSS file to style consistently across all pages.
 
-There is a JS file to create a popup stating the most recent update date.
+There is a JS file to create a popup stating the webform on the contact page was successfully submitted.
