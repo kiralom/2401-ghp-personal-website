@@ -1,63 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" a href="style.css">
-    <script src=”javascript.js”></script>
-</head>
-<body>
+    <link rel="stylesheet" a href="style.css" />
+    <script defer src="javascript.js"></script>
+  </head>
+  <body>
     <header>
-        <nav>
-            <h1>Kira Lom Digital CV</h1>
-            <div class="navbar">
-            <div class="buttonBox">
+      <nav>
+        <h1>Kira Lom Personal Website</h1>
+        <div class="navbar">
+          <div class="buttonBox">
             <a href="index.html">Home</a>
-            </div>
-            <div class="buttonBox">
+          </div>
+          <div class="buttonBox">
             <a href="about.html">About</a>
-            </div>
-            <div class="buttonBox">
+          </div>
+          <div class="buttonBox">
             <a href="portfolio.html">Portfolio</a>
-            </div>
-            <div class="buttonBox">
+          </div>
+          <div class="buttonBox">
             <a href="contact.html">Contact</a>
-            </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <div class="container">
-        <div class="content"><p>
-            <div class="subsec">
-    <h3>
-     Contact:
-    </h3>
-                <ul>
-                <li>📧 Via <a href="mailto:kira.lom@stern.nyu.edu">Email</a></li>
-                <li><img src="LI-logo.png" height="18px">
-                    Via <a href="https://www.linkedin.com/in/kiralom/">LinkedIn</a></li>
-            </ul>
-    </div>
-
-    <div class="subsec">
+      <div class="content">
         <h3>Location:</h3>
-                <ul>
-                <li>Full time Manhattan NY resident</li>
-                <li>Able to commute to locations within the 5 boros</li>
-            </ul>
-        </div>
+        <ul>
+          <li>Full time Manhattan NY resident</li>
+          <li>Able to commute to locations within the 5 boros</li>
+        </ul>
+
+        <h3>Contact:</h3>
+        <ul>
+          <li>Via <a href="mailto:kira.lom@stern.nyu.edu">Email</a> 📧</li>
+          <li>
+            Via <a href="https://www.linkedin.com/in/kiralom/">LinkedIn</a>
+            <img id="LIlogo" src="LI-logo.png" height="15px" padding="2px" />
+          </li>
+          <li>Via Webform:</li>
+        </ul>
+
+        <form id="form">
+          <h4>Name</h4>
+          <input type="text" id="contactName" name="”contactName”" />
+
+          <h4>Email</h4>
+          <input type="email" id="contactEmail" name="”contactEmail”" />
+
+          <label for="reason-select"><h4>Reason for contact</h4></label>
+          <select name="reason" id="reason-select">
+            Please choose an option
+            <option value="null">Select</option>
+            <option value="option1">Career inquiry</option>
+            <option value="option2">Speaking opportunity</option>
+            <option value="option3">Networking</option>
+            <option value="option4">Other</option>
+          </select>
+
+          <h4>Message</h4>
+          <textarea
+            name="message"
+            id="contactMessage"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <br />
+          <button type="submit" id="submit">
+            <!-- <a href="success.html">Submit</a> -- -->
+            Submit
+          </button>
+        </form>
+      </div>
+
+      <div class="content">
+        <img class="bluewater" src="Blue_rapids.jpeg" width="500vw" />
+      </div>
     </div>
 
-        <div class="content">
-            <img src="NYCcollage.jpeg" alt="NYC collage" height="350vh" id="collage">
-        </div>
-    </div>
-  
-            <br>
-        <footer>
-            <hr>
-    <p> <i>Last updated 2024-01-21</i></p>
-        </footer>
-</body>
+    <br />
+    <footer>
+      <p><i>Last updated 2024-01-24</i></p>
+    </footer>
+  </body>
 </html>
